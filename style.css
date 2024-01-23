@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+    background-color: rgb(241, 242, 243);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.8;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+#search-input{
+    width: 60%;
+    max-width: 400px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0 0 5px rgb(25,25,25, .3);
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    color: rgb(25, 25, 25);
+}
+
+#search-btn{
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: orange;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 7px;
+    box-shadow: 0 0 5px rgb(25,25,25, .3);
+    transition: background-color 300ms ease;
+}
+
+
+#search-btn:hover{
+    background-color: rgb(241, 175, 50);
+}
+
+.search-results{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.search-result{
+    margin-bottom: 60px;
+    width: 30%;
+    border-radius: 7px;
+    box-shadow: 0 0 5px rgba(25,25,25,.3);
+    overflow: hidden;
+}
+
+.search-result:hover img{
+    transform: scale(1.09);
+}
+
+.search-result img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform .3s ease-in-out;
+}
+
+.search-result a{
+    padding: 10px;
+    display: block;
+    color: rgb(25, 25, 25);
+    text-decoration: none;
+    transition: background-color .3s ease-in-out;
+}
+
+.search-result:hover a{
+    background-color: rgba(25,25,25,.1);
+}
+
+#show-more{
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    background-color: orange;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 0 5px rgb(25,25,25, .3);
+    transition: background-color 300ms ease;
+}
+
+#show-more:hover{
+    background-color: rgb(241, 175, 50);
+}
+
+@media screen and (max-width: 768px) {
+    .search-result{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .search-result{
+        width: 100%;
+    }
+
+    form{
+        flex-direction: column;
+    }
+
+    #search-input{
+        margin-bottom: 20px;
+        width: 80%;
+    }
+}
