@@ -103,6 +103,7 @@ form{
     font-weight: bold;
     box-shadow: 0 0 5px rgb(25,25,25, .3);
     transition: background-color 300ms ease;
+    display: none;
 }
 
 #show-more:hover{
